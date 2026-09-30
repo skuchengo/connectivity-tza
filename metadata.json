@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Tanzania — Connectivity and Population",
+    "fr": "Tanzania — Connectivité et population"
+  },
+  "iso3": "TZA",
+  "country": "Tanzania",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "reference_period": "2026Q2",
+  "quarters_processed": [
+    "2026Q2",
+    "2026Q1",
+    "2025Q4",
+    "2025Q3"
+  ],
+  "services": [
+    "fixed",
+    "mobile"
+  ],
+  "admin_level": "ADM2",
+  "generated": "2026-09-30T13:39:02",
+  "sources": {
+    "ookla": {
+      "name": "Ookla Speedtest Open Data",
+      "licence": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/teamookla/ookla-open-data",
+      "resolution": "Web Mercator z16 (~611 m at the equator)"
+    },
+    "worldpop": {
+      "name": "WorldPop 2025 1km",
+      "product": "Global 2 R2025A",
+      "release": "R2025A",
+      "is_projection": true,
+      "licence": "CC BY 4.0",
+      "url": "https://www.worldpop.org"
+    },
+    "geoboundaries": {
+      "name": "geoBoundaries gbOpen",
+      "licence": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  },
+  "methods": {
+    "weighting": "population-weighted median; cell population shared equally among the tiles whose centroid falls in the cell",
+    "coverage": "share of population in 1 km cells containing >= 1 measured tile",
+    "thresholds_mbps": {
+      "broadband": 10,
+      "high_quality": 25
+    },
+    "settlement_density_thresholds": {
+      "urban": 1500,
+      "periurban": 300
+    }
+  },
+  "headline": {
+    "d_median_pop": 21.741454329329965,
+    "d_median_tile": 21.945999999999998,
+    "pct_above_bb": 73.39913011285077,
+    "pct_above_hi": 44.83244188219354,
+    "pop_coverage_pct": 18.590029149172512,
+    "area_coverage_pct": 0.27377544720916214,
+    "lat_median_pop": 31.0
+  },
+  "population_total": 69099124.63332519,
+  "connectivity_gini": 0.5739623229042303,
+  "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
+}
